@@ -9,13 +9,14 @@ PCA-GPU-based-vector-summation.-Explore-the-differences.
 6. Copy output data from the device to the host and verify the results against the host's sequential vector addition. Free memory on the host and the device.
 
 ## PROGRAM:
-TYPE YOUR CODE HERE
+
 
 ```
 !pip install git+https://github.com/andreinechaev/nvcc4jupyter.git
 %load_ext nvcc4jupyter
 ```
 ##THREADS =512
+
 ```
 %%cuda
 #include <stdio.h>
@@ -220,6 +221,7 @@ int main(int argc, char **argv)
 }
 ```
 ###THREADS=1023
+
 ```
 %%cuda
 #include <stdio.h>
@@ -424,6 +426,7 @@ int main(int argc, char **argv)
 }
 ```
 ##THREADS=1024
+
 ```
 %%cuda
 #include <stdio.h>
@@ -627,7 +630,8 @@ int main(int argc, char **argv)
     return(0);
 }
 ```
-THREADS=256
+##THREADS=256
+
 ```
 %%cuda
 #include <stdio.h>
@@ -834,15 +838,19 @@ int main(int argc, char **argv)
 ## OUTPUT:
 
 ##THREADS=512
+
 <img width="902" height="192" alt="image" src="https://github.com/user-attachments/assets/e6d7e66e-6db0-4603-8860-44c78e16052e" />
 
 ##THREADS=1023
+
 <img width="849" height="202" alt="image" src="https://github.com/user-attachments/assets/fe3fec8f-6727-4506-918b-74181de5ec57" />
 
 ##THREADS=1024
+
 <img width="864" height="190" alt="image" src="https://github.com/user-attachments/assets/4ae7b6af-2024-45c0-90f5-450efe63e44e" />
 
 ##THREADS=256
+
 <img width="813" height="188" alt="image" src="https://github.com/user-attachments/assets/d782c993-7afd-4049-9c4a-7a27ec2a5b80" />
 
 ## RESULT:
